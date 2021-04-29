@@ -31,3 +31,13 @@ class TestVeri {
     if (_sayac + 1 < _soruBankasi.length) _sayac++;
   }
 }
+
+class RandomTestVeri extends TestVeri {
+  int _sayac = 5;
+  @override
+  void sonrakiSoru() {
+    if (_sayac + 1 < _soruBankasi.length) {
+      _sayac--;
+    }
+  }
+}
